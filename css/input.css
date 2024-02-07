@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat,wght@0,100..900;1,100..900&display=swap');
+@import '../node_modules/fontawesome-free/css/all.css';
+@import '../node_modules/fontawesome-free/css/solid.css';
+@import '../node_modules/fontawesome-free/css/brands.css';
+@import '../node_modules/fontawesome-free/css/regular.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: BobbyJones;
+  src: url('fonts/Bobby Jones Soft.otf') format('opentype');
+}
+
+input:focus-within ~ label,
+input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-6;
+}
+
+input:focus-within ~ label {
+  @apply text-blue-500 font-bold uppercase;
+}
+
+.step-icon {
+  @apply z-[1] col-start-1 row-start-1 grid h-12 w-12 place-content-center rounded-full bg-primary;
+}
+
+.drawer-side {
+  @apply fixed inset-0 z-40 bg-black bg-opacity-0;
+}
