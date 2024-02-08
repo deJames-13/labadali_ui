@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hello</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Labadali</title>
   </head>
-  <body>
-    <script>
-      window.location.href = 'resources/signin.html';
-    </script>
+
+  <body class="mx-auto min-h-screen">
+
+    <header class="w-full mb-12">
+      <div class="container mx-auto p-3 h-full flex justify-between items-center border-b border-cbrown">
+        <div class="logo flex space-x-2 items-center">
+          <img class="w-20 inline-block" src="/resources/img/logo-icon-transparent.png" alt="" />
+          <span class="text-4xl uppercase text-primary font-BobbyJones">labadali</span>
+        </div>
+
+        <div class="nav flex space-x-6 items-center">
+          <a href="/" class="btn btn-ghost text-primary text-xl font-bold uppercase hover:text-cbrown">
+            Home
+          </a>
+
+          <div
+            class="btn btn-ghost text-cbrown font-medium uppercase hover:font-bold hover:scale-105 transform transition-all">
+            About
+          </div>
+
+          <div
+            class="btn btn-ghost text-cbrown font-medium uppercase hover:font-bold hover:scale-105 transform transition-all">
+            Services
+          </div>
+
+          <a href="/resources/signin.html" class="btn btn-secondary text-cbrown font-bold uppercase">
+            Sign in
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="w-full flex space-x-3">
+      <div class="left-hero w-full relative  flex flex-col space-y-5 px-24">
+        <div class="w-full relative">
+          <h1 class="w-full z-2 font-display text-8xl text-secondary tracking-wider drop-shadow-xl">
+            WE DO
+            LAUNDRY FOR YOU
+          </h1>
+          <h1 class="w-full absolute top-0 right-1 font-display text-8xl text-primary tracking-wider ">
+            WE DO
+            LAUNDRY FOR YOU
+          </h1>
+        </div>
+        <p class="text-cbrown font-medium text-lg ">Labadali: Laundry Made Easy, Speed Redefined!</p>
+        <a href="/resources/register.html"
+          class="max-w-xs btn btn-secondary uppercase text-white text-2xl font-bold tracking-wide drop-shadow-lg">
+          Get Started
+        </a>
+
+        <img class="absolute -z-10 -top-16 right-8" src="./resources/img/bubble-transparent.png" alt="">
+      </div>
+
+
+
+      <div class="w-full flex flex-col px-8">
+        <img class="max-w-full" src="./resources/img/right-hero-img.png" alt="">
+      </div>
+    </main>
+
+
   </body>
+
 </html>

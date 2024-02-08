@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./resources/**/*.html'],
+  content: ['./resources/**/*.html', './index.html'],
   variants: {
     borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
   },
@@ -32,6 +32,7 @@ export default {
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
       body: ['"Monsterrat"'],
+      display: ['"Wedges"'],
       BobbyJones: 'bobbyjones',
     },
   },
@@ -43,5 +44,6 @@ export default {
     utils: true,
     logs: true,
     prefix: '',
+    darkTheme: false,
   },
 };
